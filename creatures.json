@@ -33,6 +33,20 @@
 				"color": "92af14"
 			},
 			{
+				"json": "EzmereldasGuidetoRavenloft",
+				"abbreviation": "EGR",
+				"full": "Ezmerelda's Guide to Ravenloft",
+				"version": "1.0.0",
+				"authors": [
+					"Jack Weighill",
+					"Hiten Dave"
+				],
+				"convertedBy": [
+					"Jack Weighill"
+				],
+				"color": "bd2828"
+			},
+			{
 				"json": "FLOWER",
 				"abbreviation": "FLOWER",
 				"full": "FLOWER",
@@ -49251,6 +49265,4960 @@
 			],
 			"savingThrowForced": [
 				"constitution"
+			]
+		},
+		{
+			"name": "Prince Narsioch",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"apparition",
+					"elf"
+				]
+			},
+			"source": "EzmereldasGuidetoRavenloft",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "22d8 + 66",
+				"average": 165
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 16,
+			"int": 14,
+			"wis": 15,
+			"cha": 18,
+			"passive": 17,
+			"cr": "15",
+			"page": 31,
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S"
+			],
+			"save": {
+				"dex": "+8",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"arcana": "+7",
+				"deception": "+14",
+				"intimidation": "+9",
+				"nature": "+7",
+				"perception": "+7",
+				"persuasion": "+14"
+			},
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"isNamedCreature": true,
+			"trait": [
+				{
+					"name": "Aura of Death",
+					"entries": [
+						"Narsioch exudes a lifesucking aura in a 20- foot-radius around him. Whenever a creature enters the area for the first time on a turn or starts its turn there, it must succeed on a {@dc 17} Constitution saving throw or have its hit point maximum reduced by 10 ({@damage 3d6}). This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. ",
+						"Additionally, whenever a creature within Narsioch's Aura of Death dies, it immediately rises as a {@creature specter} under his control. Until the specter is killed, the dead creature can't be returned to life by any means short of a wish spell."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"Narsioch can move through other creatures and objects as if they were {@quickref difficult terrain||3}. He takes 5 ({@dice 1d10}) force damage if he ends his turn inside an object."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Narsioch fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Turn Defiance (Ghast)",
+					"entries": [
+						"Narsioch and any Undead creature within 30 feet of him have advantage on saving throws against effects that turn Undead."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"Narsioch doesn't require air, food, drink, or sleep."
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Legendary Resistances",
+				"Turn Resistance",
+				"Unusual Nature"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Narsioch can use Horrifying Visage. He then makes three Life Drain attacks and uses Soul Vortex, if available."
+					]
+				},
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}9 ({@damage 3d6 + 2}) necrotic damage. The target must succeed on a {@dc 17} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Horrifying Visage",
+					"entries": [
+						"Each non-Undead creature within 60 feet of Narsioch that can see him must succeed on a {@dc 17} Wisdom saving throw or be {@condition frightened} for 1 minute. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, with disadvantage if Narsioch is within line of sight, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to Narsioch's Horrifying Visage for the next 24 hours."
+					]
+				},
+				{
+					"name": "Soul Vortex {@recharge 5}",
+					"entries": [
+						"Narsioch unleashes a swirling cyclone of soul energy in a 20-foot-radius around him. Each creature caught in the area must make a {@dc 17} Charisma saving throw. On a failure, a creature's hit point maximum is halved. On a success, its hit point maximum is instead reduced by 10 ({@dice 3d6}). This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"HPR",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"bonus": [
+				{
+					"name": "Possessive Puppeteering",
+					"entries": [
+						"One creature that Narsioch can see within 60 feet of him must succeed on a {@dc 17} Charisma saving throw or have its body forcibly taken over by Narsioch for a moment. The target must immediately use its reaction, if available, to move up to its speed towards a space of Narsioch's choice and make a weapon attack against a target of Narsioch's choice. ",
+						"Undead and creatures immune to possession automatically succeed on the saving throw."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Narsioch can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Narsioch regains spent legendary actions at the start of his turn."
+			],
+			"legendary": [
+				{
+					"name": "Life Drain",
+					"entries": [
+						"Narsioch makes a Life Drain attack."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Narsioch moves up to his speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Possession (Costs 2 Actions)",
+					"entries": [
+						"Narsioch uses Possessive Puppeteering."
+					]
+				}
+			],
+			"shortName": "Narsioch",
+			"isNpc": true,
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Dread King Raghar",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"paladin"
+				]
+			},
+			"source": "EzmereldasGuidetoRavenloft",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "27d8 + 108",
+				"average": 229
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 50
+			},
+			"str": 25,
+			"dex": 12,
+			"con": 18,
+			"int": 14,
+			"wis": 14,
+			"cha": 22,
+			"passive": 18,
+			"cr": "20",
+			"shortName": "Raghar",
+			"page": 40,
+			"isNpc": true,
+			"senses": [
+				"truesight 60 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"save": {
+				"dex": "+7",
+				"con": "+10",
+				"wis": "+8",
+				"cha": "+12"
+			},
+			"skill": {
+				"athletics": "+13",
+				"intimidation": "+12",
+				"perception": "+8",
+				"religion": "+8"
+			},
+			"resist": [
+				"cold",
+				"necrotic"
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Army of the Damned",
+					"entries": [
+						"Any Humanoid slain by Raghar is instantly returned to life as a {@creature zombie} under his control."
+					]
+				},
+				{
+					"name": "Gift of Dahlver-Nar",
+					"entries": [
+						"When Raghar dies, if he is still the king of Dromeria, he returns to life sat upon the throne of Castille Asiento after {@dice 1d4} hours, as per the {@spell true resurrection} spell."
+					]
+				},
+				{
+					"name": "Gift of Drizlash",
+					"entries": [
+						"Raghar can walk across difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Gift of Vaund",
+					"entries": [
+						"Raghar is hidden from divination magic. He can't be targeted by such magic or perceived through magical scrying sensors."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Raghar fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Raghar has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Raghar regains 20 hit points at the start of his turn if he has at least 1 hit point."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration"
+			],
+			"isNamedCreature": true,
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Raghar makes two Longsword attacks and uses Spellcasting."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 7}) slashing damage plus ({@damage 2d8}) necrotic damage, or 12 ({@damage 1d10 + 7}) damage plus ({@damage 2d8}) necrotic damage if used with both hands."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"longsword|phb"
+			],
+			"bonus": [
+				{
+					"name": "Gift of Seriach (1/Day)",
+					"entries": [
+						"Raghar magically summons two {@creature hell hound|mm|hell hounds}, which appears in unoccupied spaces within 5 feet of himself. Each hell hound takes its turn immediately after Raghar on the same initiative count and obeys Raghar's commands. The hell hounds disappears after 1 hour or when they die."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Raghar can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Raghar regains spent legendary actions at the start of his turn."
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Raghar makes a Longsword attack."
+					]
+				},
+				{
+					"name": "Directed Strike",
+					"entries": [
+						"Raghar commands an allied creature within 30 feet of him. If that creature can hear Raghar, it can use its reaction to make a weapon attack against a creature of Raghar's choice."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Raghar moves up to half his speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Raghar casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 20}, {@hit 12} to hit with spell attacks):"
+					],
+					"will": [
+						"{@spell command}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell cone of cold}",
+							"{@spell contagion}",
+							"{@spell dispel magic}",
+							"{@spell lightning bolt}",
+							"{@spell raise dead} (as an action)",
+							"{@spell suggestion}"
+						],
+						"2e": [
+							"{@spell banishment}",
+							"{@spell death ward}"
+						],
+						"1e": [
+							"{@spell destructive wave}",
+							"{@spell finger of death}",
+							"{@spell scrying} (as an action)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting",
+					"displayAs": "action"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"C",
+				"L",
+				"N",
+				"R",
+				"T"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Baroness Belépiné LaBergere",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger",
+					"vampire"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 212,
+				"formula": "25d8 + 100"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 17,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"dex": "+9",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"arcana": "+8",
+				"deception": "+9",
+				"history": "+8",
+				"insight": "+7",
+				"perception": "+7",
+				"persuasion": "+9",
+				"stealth": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Belépiné fails a saving throw, she can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Misty Escape",
+					"entries": [
+						"When she drops to 0 hit points outside her resting place, Belépiné transforms into a cloud of bloodmist (as per her Shapechanger action) instead of falling {@condition unconscious}, provided that she isn't in sunlight or running water. If she can't transform, Belépiné is destroyed.",
+						"While she has 0 hit points in mist form, Belépiné can't revert to her vampire form, and she must reach her resting place within 2 hours or be destroyed. Once in her resting place, she reverts to her vampire form. She is then {@condition paralyzed} until she regains at least 1 hit point. After spending 1 hour in its resting place with 0 hit points, Belépiné regains 1 hit point."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Belépiné regains 20 hit points at the start of her turn if she has at least 1 hit point and isn't in sunlight or running water. If Belépiné takes radiant damage, this trait doesn't function at the start of her next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Belépiné can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"Belépiné doesn't require air."
+					]
+				},
+				{
+					"name": "Vampire Weaknesses",
+					"entries": [
+						"Belépiné has the following flaws:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"name": "Forbiddance",
+									"type": "item",
+									"entries": [
+										"Belépiné can't enter a residence without an invitation from one of the occupants."
+									]
+								},
+								{
+									"name": "Harmed by Running Water",
+									"type": "item",
+									"entries": [
+										"Belépiné takes 20 acid damage if she ends her turn in running water."
+									]
+								},
+								{
+									"name": "Stake to the Heart",
+									"type": "item",
+									"entries": [
+										"If a piercing weapon made of wood is driven into Belépiné's heart while she is {@condition incapacitated} in her resting place, Belépiné is {@condition paralyzed} until the stake is removed."
+									]
+								},
+								{
+									"name": "Sunlight Hypersensitivity",
+									"type": "item",
+									"entries": [
+										"Belépiné takes 20 radiant damage when she starts her turn in sunlight. While in sunlight, she has disadvantage on attack rolls and ability checks."
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Belépiné makes three Bloodlance attacks or four Claw attacks. She can replace one of these attacks with a Bite attack."
+					]
+				},
+				{
+					"name": "Bloodlance",
+					"entries": [
+						"{@atk ms,rs} {@hit 9} to hit, reach 10 ft. or range 120 ft., one target. {@h}10 ({@damage 1d12 + 4}) necrotic damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage. Instead of dealing damage, Belépiné can grapple the target (escape {@dc 17})."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by Belépiné, {@condition incapacitated}, or {@condition restrained}. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and Belépiné regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A Humanoid slain in this way and then buried in the ground rises the following night as a vampire spawn under Belépiné's control."
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"Belépiné polymorphs into a Medium cloud of bloodmist, or back into her true form.",
+						"While in mist form, Belépiné can't take any actions, speak, or manipulate objects. She is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. She has advantage on Strength, Dexterity, and Constitution saving throws, and is immune to all nonmagical damage, except the damage she takes from sunlight."
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"Belépiné targets one Humanoid she can see within 30 feet of her. If the target can see Belépiné, it must succeed on a {@dc 17} Wisdom saving throw against this magic or be {@condition charmed} by Belépiné. The {@condition charmed} target regards Belépiné as a trusted friend to be heeded and protected. Although the target isn't under Belépiné's control, it takes Belépiné's requests or actions in the most favourable way it can, and it is a willing target for Belépiné's bite attack.",
+						"Each time Belépiné or her companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until Belépiné is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect."
+					]
+				},
+				{
+					"name": "Cruorstorm {@recharge 5}",
+					"entries": [
+						"Belépiné tears the blood from each non-Undead creature within 30 feet of her. Each target must make a {@dc 17} Constitution saving throw. A creature takes 45 ({@damage 10d8}) necrotic damage on a failed save, or half as much on a successful one. Belépiné then regains hit points equal to half the damage rolled."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Bloodmist Jaunt",
+					"entries": [
+						"Belépiné briefly transforms into a cloud of bloodmist (as in the Shapechanger trait) and flies up to her speed, after which she immediately transforms back into her true form."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Belépiné makes a Bloodlance or Claw attack."
+					]
+				},
+				{
+					"name": "Bloodmist Jaunt",
+					"entries": [
+						"Belépiné uses her Bloodmist Jaunt bonus action."
+					]
+				},
+				{
+					"name": "Bite (Costs 2 Actions)",
+					"entries": [
+						"Belépiné makes a Bite attack."
+					]
+				},
+				{
+					"name": "Ichor Spike (Costs 2 Actions)",
+					"entries": [
+						"Belépiné creates a localised eruption of blood centred on a point that she can see within 60 feet of her. Each creature caught in the area must make a {@dc 17} Constitution saving throw. A creature takes 18 ({@damage 4d8}) necrotic damage on a failed save, or half as much on a successful one."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration",
+				"Spider Climb",
+				"Sunlight Sensitivity",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"RCH",
+				"MW",
+				"HPR"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"shortName": "Belépiné",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "The Warden",
+			"isNamedCreature": true,
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"fragment"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 170,
+				"formula": "20d8 + 80"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 5,
+			"dex": 10,
+			"con": 18,
+			"int": 22,
+			"wis": 10,
+			"cha": 7,
+			"save": {
+				"dex": "+6",
+				"int": "+12",
+				"wis": "+6"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained",
+				"stunned"
+			],
+			"languages": [
+				"understands all languages",
+				"but can only speak falteringly"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The Warden can move through other creatures and objects as if they were difficult terrain. He takes 5 ({@damage 1d10}) force damage if he ends his turn inside an object."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the Warden fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Warden has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Mind Shield",
+					"entries": [
+						"The Warden's AC includes his Intelligence modifier."
+					]
+				},
+				{
+					"name": "Susceptibility to Psychic",
+					"entries": [
+						"Whenever the Warden takes psychic damage, he takes the maximum possible damage."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"The Warden requires no air, food, drink, or sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Warden uses his Psychosis twice. He can replace one of these with a use of Delirium or Mental Break, if available."
+					]
+				},
+				{
+					"name": "Delirium",
+					"entries": [
+						"The Warden invokes madness in the mind of a creature that he can see within 60 feet of him. The target must make a {@dc 20} Wisdom saving throw. On a failure, it must immediately use its reaction, if available, to move as far as its speed allows toward the nearest creature allied to it and make a melee attack against that creature. A creature immune to the {@condition charmed} condition succeeds on its saving throw automatically."
+					]
+				},
+				{
+					"name": "Psychosis",
+					"entries": [
+						"The Warden pushes deadly hallucinations into the mind of a creature that it can see within 60 feet of it. The target must make a {@dc 20} Intelligence saving throw, taking 28 ({@damage 8d6}) psychic damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Mental Break {@recharge 5}",
+					"entries": [
+						"The Warden's mind fragments further, magically summoning a decaying memory (see chapter 3), which appears in an unoccupied space the Warden can see within 10 feet of himself. The decaying memory takes its turn immediately after the Warden on the same initiative count and obeys the Warden's commands."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Hysteria",
+					"entries": [
+						"The Warden wails with an unbearable sorrow. Each creature within 10 feet of the Warden that can hear it must succeed on a {@dc 20} Wisdom saving throw or become overcome with the Warden's wailing until the start of the Warden's next turn. For the duration, the target deals only half damage with attacks or spells that target the Warden."
+					]
+				},
+				{
+					"name": "Phase",
+					"entries": [
+						"The Warden teleports to an unoccupied space that he can see within 20 feet of him."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Neurosis Lance",
+					"entries": [
+						"{@atk ms,rs} {@hit 12} to hit, reach 5 ft. or range 30/90 ft., one creature. {@h}15 ({@damage 2d8 + 6}) psychic damage"
+					]
+				},
+				{
+					"name": "Phase",
+					"entries": [
+						"The Warden uses its Phase."
+					]
+				},
+				{
+					"name": "Breakdown (Costs 2 Actions)",
+					"entries": [
+						"The Warden vanishes into the Ethereal Plane. At the start of his next turn, he returns to the space he vanished from."
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"isNpc": true,
+			"shortName": "The Warden",
+			"damageTags": [
+				"O",
+				"Y"
+			],
+			"savingThrowForced": [
+				"intelligence",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Martimus Jack",
+			"isNamedCreature": true,
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"wizard"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 130,
+				"formula": "20d8 + 40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 14,
+			"int": 16,
+			"wis": 7,
+			"cha": 18,
+			"save": {
+				"int": "+7",
+				"wis": "+2"
+			},
+			"skill": {
+				"arcana": "+7",
+				"deception": "+8",
+				"intimidation": "+8",
+				"performance": "+8",
+				"persuasion": "+8"
+			},
+			"passive": 8,
+			"conditionImmune": [
+				"charmed",
+				"exhaustion"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Elvish"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Martimus casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15}, {@hit 7} to hit with spell attacks):"
+					],
+					"will": [
+						"{@spell friends}",
+						"{@spell invisibility}",
+						"{@spell mage hand}",
+						"{@spell minor illusion}",
+						"{@spell Tasha's mind whip|TCE}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell confusion}",
+							"{@spell enemies abound|XGE}",
+							"{@spell fear}",
+							"{@spell major image}"
+						],
+						"2e": [
+							"{@spell greater invisibility}",
+							"{@spell hypnotic pattern}",
+							"{@spell synaptic static|XGE}"
+						],
+						"1e": [
+							"{@spell illusory dragon|XGE}",
+							"{@spell mass suggestion}",
+							"{@spell mental prison|XGE}",
+							"{@spell power word pain|XGE}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Beguiling Displacement",
+					"entries": [
+						"At the start of each of his turns, Martimus creates an illusory duplicate of himself as per the {@spell mirror image} spell, provided he isn't {@condition incapacitated}, which lasts until Martimus uses a bonus action to dismiss each one he has created or until he becomes {@condition incapacitated}. Martimus can have no more than three duplicates at once."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Martimus fails a saving throw, he can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Martimus makes two Arcane Burst attacks and uses Spellcasting."
+					]
+				},
+				{
+					"name": "Arcane Burst",
+					"entries": [
+						"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 90 ft., one target. {@h}14 ({@damage 2d10 + 3}) psychic damage."
+					]
+				},
+				{
+					"name": "Illusory Appearance",
+					"entries": [
+						"Martimus covers himself and anything he is wearing or carrying with a magical illusion that makes him look like another creature of his size. The illusion ends if Martimus takes a bonus action to end it or if he dies.",
+						"The changes wrought by this effect fail to hold up to physical inspection. For example, the Martimus could appear to be bald, but someone touching his head would feel his hair. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a {@dc 20} Intelligence ({@skill Investigation}) check to discern that Martimus is disguised."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Martimus makes an Arcane Burst attack."
+					]
+				},
+				{
+					"name": "Illusory Escape",
+					"entries": [
+						"Martimus creates a new illusory duplicate as per his Beguiling Displacement feature. He then moves up to his speed."
+					]
+				},
+				{
+					"name": "Beguile (Costs 2 Actions)",
+					"entries": [
+						"Martimus attempts to twist the mind of a creature that he can see within 60 feet of him. The target must succeed on a {@dc 15} Intelligence saving throw or suffer disadvantage on attack rolls, ability checks, and saving throws until the end of its next turn. A creature immune to the {@condition charmed} condition succeeds on this saving throw automatically."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"E"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"frightened",
+				"incapacitated",
+				"invisible"
+			],
+			"shortName": "Martimus",
+			"isNpc": true,
+			"damageTags": [
+				"Y"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"Y"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"intelligence",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Queen Hekolda",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"wizard"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 210,
+				"formula": "28d8 + 84"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 16,
+			"int": 14,
+			"wis": 10,
+			"cha": 20,
+			"save": {
+				"con": "+8",
+				"cha": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "16",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Hekolda casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 18}, {@hit 10} to hit with spell attacks):"
+					],
+					"will": [
+						"{@spell armor of Agathys} (3rd-level version)",
+						"{@spell dancing lights}",
+						"{@spell mage hand}",
+						"{@spell mending}",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell charm person}",
+							"{@spell hold person}",
+							"{@spell mage armor}",
+							"{@spell mirror image}",
+							"{@spell shatter}"
+						],
+						"2e": [
+							"{@spell banishment}",
+							"{@spell dispel magic}",
+							"{@spell fly}",
+							"{@spell ice storm}",
+							"{@spell sleet storm}",
+							"{@spell slow}"
+						],
+						"1e": [
+							"{@spell cone of cold}",
+							"{@spell crown of stars|XGE}",
+							"{@spell dominate person}",
+							"{@spell Otiluke's freezing sphere}",
+							"{@spell teleport}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Aversion to Fire",
+					"entries": [
+						"If Hekolda takes fire damage, she has disadvantage on attack rolls and ability checks until the end of her next turn."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"When Hekolda fails a saving throw, she can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Hekolda regains 20 hit points at the start of her turn. If Hekolda takes fire damage, this trait doesn't function until the start of Hekolda's next turn. Hekolda dies only if she starts her turn with 0 hit points and doesn't regenerate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Hekolda makes two Frost Ray attacks and uses Spellcasting or Sheer Cold, if available."
+					]
+				},
+				{
+					"name": "Frost Ray",
+					"entries": [
+						"{@atk rs} {@hit 10} to hit, range 60 ft., one target. {@h}18 ({@damage 3d8 + 5}) cold damage. If the target is a creature, its speed is reduced by 10 feet until the start of Hekolda's next turn. Each time Hekolda hits the target with this attack thereafter, the reduction to its speed increases by 10 feet. This attack can't reduce a creature's speed to less than 5 feet."
+					]
+				},
+				{
+					"name": "Sheer Cold {@recharge 5}",
+					"entries": [
+						"One creature Hekolda can see within 60 feet of her must succeed on a {@dc 18} Constitution saving throw or be {@condition petrified} in ice for 1 minute. A creature {@condition petrified} in this way can repeat its saving throw at the end of each of its turns, breaking free from the ice and ending the effect on a success."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Frozen Tomb",
+					"entries": [
+						"Whenever Hekolda takes damage, she can entomb herself in an icy shell until the start of her next turn. She gains 55 ({@dice 10d10}) temporary hit points, which absorbs as much of the damage as possible and vanishes along with the shell at the start of her next turn. Whilst the shell persists, Hekolda is {@condition incapacitated}, her speed is reduced to 0, and she automatically fails all Strength or Dexterity ability checks and saving throws."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Frost Ray",
+					"entries": [
+						"Hekolda makes a Frost Ray attack."
+					]
+				},
+				{
+					"name": "Frozen Step",
+					"entries": [
+						"Hekolda vanishes in a burst of ice and snow, teleporting to an unoccupied space that she can see within 30 feet of her. Immediately after she disappears, each creature within 10 feet of the space she left must make a {@dc 18} Constitution saving throw, taking 9 ({@damage 2d8}) cold damage on a failed save, or half as much on a success."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflict": [
+				"petrified"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"incapacitated",
+				"paralyzed",
+				"prone"
+			],
+			"isNpc": true,
+			"isNamedCreature": true,
+			"shortName": "Hekolda",
+			"damageTags": [
+				"C"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"R",
+				"T"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Gulthias of Nightfang Spire",
+			"isNamedCreature": true,
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "plant",
+				"tags": [
+					"blight"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 262,
+				"formula": "25d8 + 150"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": {
+					"number": 30,
+					"condition": "(wood only)"
+				}
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 22,
+			"int": 18,
+			"wis": 15,
+			"cha": 16,
+			"save": {
+				"str": "+10",
+				"con": "+12",
+				"int": "+10",
+				"wis": "+8"
+			},
+			"skill": {
+				"arcana": "+10",
+				"nature": "+10",
+				"perception": "+8",
+				"religion": "+10"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 18,
+			"resist": [
+				"necrotic"
+			],
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Druidic"
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Gulthias casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability modifier (spell save {@dc 18}):"
+					],
+					"will": [
+						"{@spell darkness}",
+						"{@spell druidcraft}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell blight}",
+							"{@spell entangle}",
+							"{@spell spike growth}"
+						],
+						"1e": [
+							"{@spell transport via plants}",
+							"{@spell wither and bloom|SCC} (9th-level version)"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Gulthias fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Susceptibility to Fire",
+					"entries": [
+						"Whenever Gulthias takes fire damage, he takes the maximum possible damage."
+					]
+				},
+				{
+					"name": "Syphoning Regeneration",
+					"entries": [
+						"Whenever Gulthias deals damage to one or more other creatures, he regains {@dice 1d6} hit points."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"Gulthias doesn't require air, drink, or sleep."
+					]
+				},
+				{
+					"name": "Wood Glide",
+					"entries": [
+						"Gulthias can burrow through nonmagical, unworked wood. While doing so, Gulthias doesn't disturb the material he moves through."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Gulthias makes four Vine Spike or Thorn Volley attacks. He can replace two of these attacks with a use of Spellcasting."
+					]
+				},
+				{
+					"name": "Vine Spike",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}17 ({@damage 2d12 + 4}) piercing damage, and the target must succeed on a {@dc 18} Strength saving throw or be pushed up to 10 feet in a horizontal direction of Gulthias's choice."
+					]
+				},
+				{
+					"name": "Thorn Volley",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 30/120 ft., one target. {@h}14 ({@damage 4d4 + 4}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Vampiric Tether",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 30 ft., one target. {@h}The target becomes tethered to Gulthias. A creature tethered in this way takes 13 ({@damage 3d8}) necrotic damage at the start of each of its turns. The tether has AC 16 and can be severed by dealing 18 damage or more to it at once. The tether has immunity to bludgeoning, piercing, poison, and psychic damage. Destroying the tether doesn't hurt Gulthias.",
+						"Additionally, a tethered creature can't enter a space more than 15 feet away from Gulthias. If Gulthias enters a space more than 15 feet away from the target, the target is pulled into the nearest unoccupied space within 15 feet of Gulthias. If no such space is available, the tether is broken."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Gulthias makes a Thorn Volley or Vine Spike attack."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Gulthias moves up to his speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Spellcasting (Costs 2 Actions)",
+					"entries": [
+						"Gulthias uses his Spellcasting."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"DU"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"shortName": "Gulthias",
+			"isNpc": true,
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"damageTagsSpell": [
+				"N",
+				"P"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"strength"
+			]
+		},
+		{
+			"name": "Gravedigger Garo",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 209,
+				"formula": "22d8 + 110"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 20,
+			"int": 17,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"str": "+9",
+				"con": "+10",
+				"wis": "+6",
+				"cha": "+5"
+			},
+			"skill": {
+				"arcana": "+8",
+				"history": "+8",
+				"investigation": "+8",
+				"religion": "+8",
+				"perception": "+6",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"psychic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"Common",
+				"Vistani"
+			],
+			"cr": "15",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Garo casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 16}, {@hit 8} to hit with spell attacks):"
+					],
+					"will": [
+						"{@spell gentle repose}",
+						"{@spell inflict wounds}",
+						"{@spell mold earth|XGE}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell bestow curse} (5th-level version)",
+							"{@spell erupting earth|XGE}",
+							"{@spell passwall}"
+						],
+						"1e": [
+							"{@spell circle of death}",
+							"{@spell negative energy flood|XGE}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Garo fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Garo has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Garo regains 20 hit points at the start of his turn. If Garo takes fire or radiant damage, this trait doesn't function until the start of his next turn. Garo dies only if he starts his turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"When Garo dies his body and all his possessions turn to ash. After 24 hours, he gains a new body that's wearing and carrying all his possessions, regaining all his hit points and becoming active again. The new body appears in his tomb."
+					]
+				},
+				{
+					"name": "Turn Immunity",
+					"entries": [
+						"Garo is immune to effects that turn Undead."
+					]
+				},
+				{
+					"name": "Undead Nature",
+					"entries": [
+						"Garo doesn't require air, food, drink, or sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Garo makes two Shovel attacks and uses Unearth or Spellcasting."
+					]
+				},
+				{
+					"name": "Shovel",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 feet, one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning or slashing damage (Garo's choice) plus 4 ({@damage 1d8}) necrotic damage. If Garo scores a critical hit, the target must succeed on a {@dc 18} Constitution saving throw or become {@condition stunned} until the end of its next turn."
+					]
+				},
+				{
+					"name": "Unearth",
+					"entries": [
+						"Garo thrusts his shovel into the ground, upending earth and stone on the ground in a 15-foot cone. Each creature standing on earth or stone in the area must make a {@dc 18} Dexterity saving throw. On a failure, a creature takes 9 ({@damage 2d8}) bludgeoning damage plus 9 ({@damage 2d8}) thunder damage and is knocked {@condition prone}. On a success, a creature takes half as much damage and isn't knocked {@condition prone}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Soul Lantern {@recharge}",
+					"entries": [
+						"Garo releases {@dice 1d4 + 1} specters from his lantern, which appear in unoccupied spaces within 10 feet of Garo. The specters take their turn immediately after Garo on the same initiative count and obey Garo's commands. The specters disappear after 1 minute or when they or Garo die."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Garo makes a Shovel attack."
+					]
+				},
+				{
+					"name": "Command Undead",
+					"entries": [
+						"Garo targets one Undead creature he can see within 30 feet of him. If the target can see and hear Garo, it must make one weapon attack as a reaction against a target of Garo's choosing. An unwilling creature can make a {@dc 18} Wisdom saving throw to resist this effect."
+					]
+				},
+				{
+					"name": "Necrotic Haze",
+					"entries": [
+						"Garo casts deathly energy toward a creature he can see within 60 feet of him. The target must make a {@dc 18} Constitution saving throw. On a failure, a creature takes 9 ({@damage 2d8}) necrotic damage and, unless it's immune to the {@condition blinded} condition, it has disadvantage on the next attack roll it makes until the end of its next turn. On a success, the creature takes half as much damage and is otherwise unaffected."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration",
+				"Rejuvenation",
+				"Turn Immunity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"prone",
+				"stunned"
+			],
+			"shortName": "Garo",
+			"isNamedCreature": true,
+			"isNpc": true,
+			"damageTags": [
+				"B",
+				"N",
+				"S",
+				"T"
+			],
+			"damageTagsSpell": [
+				"B",
+				"N"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Hans Jager",
+			"isNamedCreature": true,
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"ranger"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 127,
+				"formula": "15d8 + 80"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 18,
+			"int": 10,
+			"wis": 16,
+			"cha": 7,
+			"save": {
+				"str": "+6",
+				"dex": "+9"
+			},
+			"skill": {
+				"athletics": "+6",
+				"intimidation": "+6",
+				"nature": "+4",
+				"perception": "+7",
+				"stealth": "+9",
+				"survival": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"exhaustion"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Hans casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell detect evil and good}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell alarm}",
+							"{@spell cordon of arrows}",
+							"{@spell find traps}",
+							"{@spell locate animals or plants}",
+							"{@spell pass without trace}",
+							"{@spell silence}",
+							"{@spell snare|XGE}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Hans carries forty silvered crossbow bolts and six silver daggers."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If Hans fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Hans has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Predator's Mark (3/Day)",
+					"entries": [
+						"As a bonus action, Hans marks a creature that he can see for death. The mark persists until Hans marks another creature with this trait. Hans gains advantage on ability checks made to track a marked creature and whenever he hits that creature with a weapon attack, the creature takes an extra 3 ({@damage 1d6}) damage from the attack."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Hans regains 10 hit points at the start of his turn if he has at least 1 hit point."
+					]
+				},
+				{
+					"name": "Supernatural Nature",
+					"entries": [
+						"Hans doesn't require food, drink, or sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Hans makes three Heavy Crossbow and Silver Dagger attacks."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 100/400 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Silver Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Hunter's Stealth",
+					"entries": [
+						"Hans takes the Hide action."
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Hans makes a weapon attack."
+					]
+				},
+				{
+					"name": "Vanish",
+					"entries": [
+						"Hans moves up to his speed and then takes the Hide action."
+					]
+				}
+			],
+			"attachedItems": [
+				"heavy crossbow|phb"
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"THW"
+			],
+			"conditionInflictSpell": [
+				"deafened",
+				"restrained"
+			],
+			"shortName": "Hans",
+			"isNpc": true,
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"P"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Margrit Jager",
+			"isNamedCreature": true,
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"ranger"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 170,
+				"formula": "20d8 + 80"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 18,
+			"int": 10,
+			"wis": 16,
+			"cha": 7,
+			"save": {
+				"str": "+9",
+				"dex": "+7"
+			},
+			"skill": {
+				"athletics": "+9",
+				"intimidation": "+6",
+				"nature": "+4",
+				"perception": "+7",
+				"stealth": "+7",
+				"survival": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"exhaustion"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Margrit is a 9th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks). Margrit knows the following ranger spells:"
+					],
+					"spells": {
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell absorb elements|XGE}",
+								"{@spell detect magic}",
+								"{@spell ensnaring strike}",
+								"{@spell searing smite}",
+								"{@spell zephyr strike|XGE}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell find traps}",
+								"{@spell protection from poison}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell elemental weapon}"
+							]
+						}
+					},
+					"ability": "wis"
+				},
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Hans casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell detect evil and good}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell jump}",
+							"{@spell locate animals or plants}",
+							"{@spell longstrider}",
+							"{@spell protection from poison}",
+							"{@spell snare|XGE}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Margrit carries twenty silvered crossbow bolts and six silver daggers."
+					]
+				},
+				{
+					"name": "Hateful Blade",
+					"entries": [
+						"Whenever a creature deals damage to Margrit, until the end of Margit's next turn, she gains advantage on all weapon attacks made against that creature and she scores a critical hit on a roll of 19 or 20 on attack rolls made against them."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If Margrit fails a saving throw, she can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Margrit has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Margrit regains 10 hit points at the start of her turn if she has at least 1 hit point."
+					]
+				},
+				{
+					"name": "Supernatural Nature",
+					"entries": [
+						"Margrit doesn't require food, drink, or sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Margrit makes three Battleaxe, Silver Dagger, or Light Crossbow attacks."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage, or 10 ({@damage 1d10 + 5}) slashing damage if used with two hands."
+					]
+				},
+				{
+					"name": "Silver Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Hunter's Pace",
+					"entries": [
+						"Margrit takes the Dash action."
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Margrit makes a weapon attack."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Margrit moves up to her speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"attachedItems": [
+				"battleaxe|phb",
+				"light crossbow|phb"
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"spellcastingTags": [
+				"CR",
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"THW"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"shortName": "Margrit",
+			"isNpc": true,
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"L",
+				"O",
+				"P",
+				"T"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Azalea, the Widowmaker",
+			"isNamedCreature": true,
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half-elf",
+					"rogue",
+					"warlock"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				15,
+				{
+					"ac": 18,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 130,
+				"formula": "20d8 + 40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 20,
+			"con": 15,
+			"int": 15,
+			"wis": 10,
+			"cha": 16,
+			"save": {
+				"dex": "+10",
+				"int": "+7"
+			},
+			"skill": {
+				"athletics": "+9",
+				"deception": "+8",
+				"intimidation": "+8",
+				"perception": "+10",
+				"stealth": "+15"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 20,
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Elvish"
+			],
+			"cr": "15",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Azalea casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 16}, {@hit 8} to hit with spell attacks):"
+					],
+					"will": [
+						"{@spell disguise self}",
+						"{@spell friends}",
+						"{@spell levitate} (self only)",
+						"{@spell mage armor} (self only)",
+						"{@spell minor illusion}",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell fear}",
+							"{@spell hold person}",
+							"{@spell hunger of Hadar}"
+						],
+						"1e": [
+							"{@spell dimension door}",
+							"{@spell freedom of movement}",
+							"{@spell hallucinatory terrain}",
+							"{@spell shadow of moil|XGE}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During her first turn, Azalea has advantage on attack rolls against any creature that hasn't taken a turn. Any hit Azalea scores against a surprised creature is a critical hit."
+					]
+				},
+				{
+					"name": "Dark One's Own Luck (Recharges after a Short or Long rest)",
+					"entries": [
+						"When Azalea makes an ability check or saving throw, she can add a {@dice d10} to the roll. She can do this after the roll is made but before any of the roll's effects occur."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If Azalea is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if she succeeds on the saving throw, and only half damage if she fails."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Azalea fails a saving throw, she can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"Azalea deals an extra 21 ({@damage 6d6}) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Azalea that isn't incapacitated and she doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Azalea makes two Dagger attacks and uses Spellcasting."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 10} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage plus 9 ({@damage 2d8}) acid damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Cunning",
+					"entries": [
+						"Azalea takes the Dash, Disengage, or Hide action."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"Azalea halves the damage that she takes from an attack that hits her. Azalea must be able to see the attacker."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Teleport",
+					"entries": [
+						"Azalea teleports up to 30 feet to an unoccupied space that she can see."
+					]
+				},
+				{
+					"name": "Vanish",
+					"entries": [
+						"Azalea moves up to her speed and then takes the Hide action."
+					]
+				},
+				{
+					"name": "Brutal Blade (Costs 2 Actions)",
+					"entries": [
+						"Azalea makes an attack roll with advantage against a creature that she can see. On a hit, the target suffers a grievous wound that causes it to reduce its current hit points by 14 ({@dice 4d6}) at the start of each of its turns. Each time Azalea hits the wounded creature with an attack, the damage dealt by the wound increases by 3 ({@dice 1d6}). The wound ends if the target regains hit points or if a creature uses an action to staunch the wound, which requires a successful {@dc 15} Wisdom ({@skill Medicine}) check."
+					]
+				}
+			],
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Sneak Attack"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"THW"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"frightened",
+				"paralyzed"
+			],
+			"shortName": "Azalea",
+			"isNpc": true,
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"N",
+				"O"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Captain Thomas Darling",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"warlock"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 210,
+				"formula": "28d8 + 84"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 17,
+			"dex": 16,
+			"con": 16,
+			"int": 13,
+			"wis": 12,
+			"cha": 18,
+			"save": {
+				"dex": "+8",
+				"wis": "+6",
+				"cha": "+9"
+			},
+			"skill": {
+				"athletics": "+13",
+				"intimidation": "+9",
+				"nature": "+6",
+				"perception": "+11",
+				"survival": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Deep Speech"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Hold Breath",
+					"entries": [
+						"The Captain can hold his breath for 8 hours."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the Captain fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Sea Legs",
+					"entries": [
+						"The Captain has advantage on ability checks and saving throws to resist being knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Captain uses Summon Tentacle. He then makes three Harpoon attacks and uses Tentacle Strike."
+					]
+				},
+				{
+					"name": "Harpoon",
+					"entries": [
+						"{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 4 ({@damage 1d8}) psychic damage, and the target is pulled up to 10 feet in a straight line toward the Captain."
+					]
+				},
+				{
+					"name": "Summon Tentacle",
+					"entries": [
+						"The Captain magically conjures a 10-foot-long spectral tentacle at a point that he can see within 60 feet of him. The tentacle lasts for 1 minute or until it becomes the target of a {@spell dispel magic} spell.",
+						"The Captain can have up to three tentacles present at once. If he attempts to create a fourth tentacle, he must first choose one of his other tentacles to dismiss (no action required)."
+					]
+				},
+				{
+					"name": "Tentacle Strike",
+					"entries": [
+						"One tentacle created by the Captain's Summon Tentacle action lashes out at a creature within 10 feet of it that the Captain can see. Melee Spell Attack: {@hit 9} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) cold damage. Instead of dealing damage, the Captain can have the tentacle grapple the target (escape {@dc 17})."
+					]
+				},
+				{
+					"name": "Eldritch Assault {@recharge 5}",
+					"entries": [
+						"The Captain uses his Tentacle Strike up to six times. Each tentacle can make no more than two attacks as a part of this action."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Water Walk",
+					"entries": [
+						"The Captain gains the ability to walk across the surface of water as if it were harmless solid ground. This effect lasts until the Captain uses a bonus action on subsequent turns to end it."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Reactive Tentacles",
+					"entries": [
+						"In response to a creature attempting to move out of the reach of one of the tentacles created by the Captain's Summon Tentacle action, he can use his Tentacle Strike, choosing for that tentacle to attack that creature."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The Captain moves up to half his speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"The Captain uses either Summon Tentacle or Tentacle Strike."
+					]
+				}
+			],
+			"traitTags": [
+				"Hold Breath",
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DS"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"RCH"
+			],
+			"shortName": "Captain",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"damageTags": [
+				"C",
+				"P",
+				"Y"
+			]
+		},
+		{
+			"name": "Amelia Read",
+			"isNamedCreature": true,
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"tiefling",
+					"wizard"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d8 + 54"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 16,
+			"int": 20,
+			"wis": 14,
+			"cha": 19,
+			"save": {
+				"con": "+10",
+				"int": "+12",
+				"wis": "+9"
+			},
+			"skill": {
+				"arcana": "+12",
+				"deception": "+11",
+				"insight": "+9",
+				"perception": "+9",
+				"persuasion": "+11"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 19,
+			"resist": [
+				"cold",
+				"lightning",
+				"necrotic",
+				"psychic"
+			],
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "22",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Amelia casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 20}, {@hit 12} to hit with spell attacks):"
+					],
+					"will": [
+						"{@spell fireball}",
+						"{@spell mage hand}",
+						"{@spell prestidigitation}",
+						"{@spell Tasha's mind whip|TCE}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell dimension door}",
+							"{@spell invisibility}",
+							"{@spell mirror image}",
+							"{@spell synaptic static|XGE}"
+						],
+						"1e": [
+							"{@spell mental prison|XGE}",
+							"{@spell power word pain|XGE}",
+							"{@spell power word stun}",
+							"{@spell psychic scream|XGE}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Amelia fails a saving throw, she can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Amelia has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"Amelia has advantage on saving throws against any effect that turns Undead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Amelia makes two Mind Drain attacks. She can replace one attack with a Paralyzing Touch attack or a use of Spellcasting."
+					]
+				},
+				{
+					"name": "Paralyzing Touch",
+					"entries": [
+						"{@atk ms} {@hit 12} to hit, reach 5 ft., one target. {@h}10 ({@damage 3d6}) cold damage. The target must succeed on a {@dc 18} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Mind Drain",
+					"entries": [
+						"{@atk ms,rs} {@hit 12} to hit, reach 5 ft. or range 60 ft., one creature. {@h}21 ({@damage 3d10 + 5}) psychic damage, and Amelia regains hit points equal to the damage dealt."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Cast an At-Will Spell",
+					"entries": [
+						"Amelia uses  Spellcasting to cast an at-will spell."
+					]
+				},
+				{
+					"name": "Soul Drain",
+					"entries": [
+						"Amelia makes a Soul Drain attack."
+					]
+				},
+				{
+					"name": "Paralyzing Touch (Costs 2 Actions)",
+					"entries": [
+						"Amelia makes a Paralyzing Touch attack."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I",
+				"TP"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			],
+			"conditionInflictSpell": [
+				"invisible",
+				"stunned"
+			],
+			"shortName": "Amelia",
+			"isNpc": true,
+			"damageTags": [
+				"C",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"F",
+				"O",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"intelligence"
+			]
+		},
+		{
+			"name": "Aspect of Arkyvathigoss",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"elder evil",
+					"titan"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 740,
+				"formula": "40d20 + 320"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 120
+			},
+			"str": 30,
+			"dex": 11,
+			"con": 26,
+			"int": 24,
+			"wis": 21,
+			"cha": 22,
+			"save": {
+				"str": "+18",
+				"dex": "+8",
+				"con": "+16",
+				"int": "+15",
+				"wis": "+13"
+			},
+			"skill": {
+				"athletics": "+18",
+				"intimidation": "+14",
+				"perception": "+13",
+				"persuasion": "+14"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 23,
+			"resist": [
+				"acid",
+				"fire",
+				"thunder"
+			],
+			"immune": [
+				"cold",
+				"lightning",
+				"necrotic",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed"
+			],
+			"languages": [
+				"understands all languages but can't speak",
+				"telepathy 1 mile"
+			],
+			"cr": "28",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Arkyvathigoss can breathe air and water."
+					]
+				},
+				{
+					"name": "Legendary Resistances (3/Day)",
+					"entries": [
+						"If Arkyvathigoss fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"Arkyvathigoss deals double damage to objects and structures."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Arkyvathigoss uses Eye of the Deep. It then makes four Tentacle attacks, each of which it can replace with a use of Fling."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 40 ft., one target. {@h}24 ({@damage 4d6 + 10}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 22}). Until this grapple ends, the target is {@condition restrained}. Arkyvathigoss has thirteen tentacles, each of which can grapple one target."
+					]
+				},
+				{
+					"name": "Eye of the Deep",
+					"entries": [
+						"Arkyvathigoss's releases from one of its eyes a wave of eldritch energy in a 120-foot cone. Each non-Aberration creature caught in the area must succeed on a {@dc 22} Wisdom saving throw or become {@condition frightened} of Arkyvathigoss for 1 minute. If the saving throw fails by 5 or more, the creature is {@condition paralyzed} for as long as it remains {@condition frightened} and it suffers a random form of indefinite madness. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Arkyvathigoss's Eye of the Deep for the next 24 hours."
+					]
+				},
+				{
+					"name": "Fling",
+					"entries": [
+						"One Large or smaller object held or creature {@condition grappled} by Arkyvathigoss is thrown up to 120 feet in a direction of Arkyvathigoss's choice and knocked {@condition prone}. If a thrown target strikes a solid surface, the target takes 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a {@dc 12} Dexterity saving throw or take the same damage and be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Ravenous Feast",
+					"entries": [
+						"Each creature {@condition grappled} by Arkyvathigoss must succeed on a {@dc 22} Strength saving throw or be swallowed by Arkyvathigoss and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside Arkyvathigoss, and it takes 21 ({@damage 6d6}) cold damage plus 21 ({@damage 6d6}) necrotic damage at the start of each of Arkyvathigoss's turns. If Arkyvathigoss takes 50 damage or more on a single turn from a creature inside it, Arkyvathigoss must succeed on a {@dc 25} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of Arkyvathigoss. If Arkyvathigoss dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 15 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Maddening Abyss",
+					"entries": [
+						"Arkyvathigoss releases a 30-foot-radius wave of psychic energy, centred on a point that it can see within 120 feet of it. The area spreads around corners. Each creature caught in the area must make a {@dc 22} Intelligence saving throw. On a failure, a creature takes 33 ({@damage 6d10}) psychic damage and it must immediately use its reaction to move as far as its speed allows in a random direction."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Tentacle",
+					"entries": [
+						"Arkyvathigoss makes a Tentacle attack or uses Fling."
+					]
+				},
+				{
+					"name": "Madenning Abyss (Costs 2 Actions)",
+					"entries": [
+						"Arkyvathigoss uses Maddening Abyss."
+					]
+				},
+				{
+					"name": "Summon Spawn (Costs 3 Actions)",
+					"entries": [
+						"Arkyvathigoss conjures an aboleth, which appears in an unoccupied space that it can see within 120 feet of it. Roll initiative for the summoned aboleth, which fights to the death to protect Arkyvathigoss. It persists for 1 minute, or until Arkyvathigoss dies, upon which it melts into a viscous slurry."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow",
+				"Tentacles"
+			],
+			"languageTags": [
+				"CS",
+				"XX",
+				"TP"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"blinded",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"prone",
+				"restrained"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"N",
+				"Y"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"intelligence",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Dawn Crow",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"S"
+			],
+			"type": "celestial",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 55,
+				"formula": "10d6 + 20"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 15,
+			"int": 14,
+			"wis": 18,
+			"cha": 16,
+			"save": {
+				"dex": "+5",
+				"wis": "+6",
+				"cha": "+5"
+			},
+			"skill": {
+				"history": "+4",
+				"perception": "+8",
+				"religion": "+4"
+			},
+			"senses": [
+				"truesight 60 ft."
+			],
+			"passive": 18,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				"radiant",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Celestial",
+				"Common"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The dawn crow casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save {@dc 14}, {@hit 6} to hit with spell attacks):"
+					],
+					"will": [
+						"{@spell fire bolt}",
+						"{@spell light}"
+					],
+					"daily": {
+						"1": [
+							"{@spell scorching ray}"
+						],
+						"3e": [
+							"{@spell daylight}",
+							"{@spell guiding bolt}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"name": "Keen Sight",
+					"entries": [
+						"The crow has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"If the crow fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Mimicry",
+					"entries": [
+						"The crow can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 13} Wisdom ({@skill Insight}) check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The crow makes one Beak attack and two Talons attacks. It can replace its Beak attack with a use of Spellcasting."
+					]
+				},
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) damage plus 3 ({@damage 1d6}) radiant damage."
+					]
+				},
+				{
+					"name": "Talons",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) damage plus 3 ({@damage 1d6}) radiant damage."
+					]
+				},
+				{
+					"name": "Light of the Dawn (1/Day)",
+					"entries": [
+						"The dawn crow channels the power of the sun. If another dawn crow within 30 feet has taken this action since the start of the crow's previous turn, their powers combine, calling down a 20-foot radius, 1,000-foot-high cylinder of searing light centred on a point that it can see within 500 feet. Each creature caught in the area must make a {@dc 14} Constitution saving throw. On a failure, a creature takes 22 ({@damage 4d10}) radiant damage, or half as much on a success."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "",
+					"entries": [
+						"The crow can take 1 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The crow regains spent legendary actions at the start of its turn."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"The crow makes a Beak or Talons attack."
+					]
+				},
+				{
+					"name": "Cast an At Will Spell",
+					"entries": [
+						"The crow uses Spellcasting to cast an at will spell."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The crow moves up to its speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CE"
+			],
+			"damageTags": [
+				"R"
+			],
+			"damageTagsSpell": [
+				"F",
+				"R"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Dead Studio Audience",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"apparition"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 13,
+				"formula": "3d8 - 3"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 50,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 14,
+			"con": 8,
+			"int": 10,
+			"wis": 10,
+			"cha": 12,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"necrotic",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"understands all languages it knew in life but can't speak"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Horrific Laughter",
+					"entries": [
+						"The audience can use its bonus action to begin cackling maniacally until it chooses to stop (no action required). Whenever a creature starts its turn within 5 feet of one or more audiences, it must make a {@dc 12} Wisdom saving throw. On a failure, the creature takes 4 ({@damage 1d4 + 2}) psychic damage for each cackling audience within 5 feet of it that it can hear and becomes {@condition deafened} until the start of its next turn. On a success, the creature instead takes half as much damage and is not {@condition deafened}.",
+						"If the damage reduces the target to 0 hit points, it suffers a bout of long term madness (see chapter 8 of the Dungeon Master's Guide). If a creature dies from this damage, a new dead studio audience rises from the corpse {@dice 1d4} hours later."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The audience can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the audience has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Undead Nature",
+					"entries": [
+						"The audience doesn't require air, food, drink, or sleep."
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"O",
+				"Y"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Fire Giant Ghost",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"apparition"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 84,
+				"formula": "13d12"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 25,
+			"dex": 9,
+			"con": 10,
+			"int": 10,
+			"wis": 14,
+			"cha": 13,
+			"save": {
+				"dex": "+3",
+				"wis": "+6"
+			},
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"fire",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"Giant"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Ethereal Sight",
+					"entries": [
+						"The ghost can see 120 feet into the Ethereal Plane when it is on the Material Plane, and vice versa."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The ghost regains 10 hit points at the start of its turn. If the ghost takes radiant damage or damage from a magic weapon, this trait doesn't function at the start of the ghost's next turn. The ghost dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Undead Nature",
+					"entries": [
+						"The ghost doesn't require air, food, drink, or sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The ghost makes two melee attacks. It then uses Enflame if it can."
+					]
+				},
+				{
+					"name": "Spectral Weapon",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}20 ({@damage 3d8 + 7}) force damage plus 7 ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Etherealness",
+					"entries": [
+						"The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane."
+					]
+				},
+				{
+					"name": "Enflame {@recharge 5}",
+					"entries": [
+						"The ghost releases spectral fire in a 30-foot-radius around it. Each creature caught in the area must make a {@dc 19} Constitution saving throw. On a failed save, a creature takes 7 ({@damage 2d6}) force damage plus 7 ({@damage 2d6}) fire damage and it ignites. Until a creature uses an action to douse the fire, an ignited creature takes 5 ({@damage 1d10}) fire damage at the start of each of its turns. On a success, a creature takes half as much damage and is not ignited."
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement",
+				"Regeneration"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"F",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Forgotten Sorrowsworn",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"sorrowsworn"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 15,
+			"int": 6,
+			"wis": 7,
+			"cha": 5,
+			"skill": {
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing while in dim light or darkness"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Spite of the Forgotten",
+					"entries": [
+						"At the start of each of its turns, if the sorrowsworn hasn't taken damage or been the target of an attack since the end of its previous turn, it becomes {@condition invisible} until the start of its next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sorrowsworn makes two Claw attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage. If the sorrowsworn had advantage on the attack, the target takes an extra 5 ({@damage 2d4}) psychic damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the sorrowsworn takes the Hide action."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Harpy Matriarch",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 88,
+				"formula": "16d8 + 16"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 40
+			},
+			"str": 13,
+			"dex": 16,
+			"con": 12,
+			"int": 9,
+			"wis": 10,
+			"cha": 16,
+			"save": {
+				"dex": "+6",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Luring Maestro",
+					"entries": [
+						"While within 60 feet of the matriarch, creatures have disadvantage on saving throws against the matriarch's Luring Song."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The matriarch has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The matriarch makes two claws attacks."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 3d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Fleeting Form",
+					"entries": [
+						"The matriarch can magically disguise itself to resemble a humanoid of roughly similar size and shape for up to 1 hour. It can revert to its true form as a bonus action. This illusion does not hold up to close scrutiny."
+					]
+				},
+				{
+					"name": "Luring Song",
+					"entries": [
+						"The matriarch sings a magical melody. Every humanoid and giant within 300 feet of the matriarch that can hear the song must succeed on a {@dc 14} Wisdom saving throw or be {@condition charmed} until the song ends. The matriarch must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the matriarch is {@condition incapacitated}.",
+						"While {@condition charmed} by the matriarch, a target is {@condition incapacitated} and ignores the songs of other harpies. If the {@condition charmed} target is more than 5 feet away from the matriarch, the target must move on its turn toward the matriarch by the most direct route, trying to get within 5 feet. It doesn't avoid opportunity attacks, but before moving into damaging terrain, such as lava or a pit, and whenever it takes damage from a source other than the matriarch, the target can repeat the saving throw. A {@condition charmed} target can also repeat the saving throw at the end of each of its turns. If the saving throw is successful, the effect ends on it.",
+						"A target that successfully saves is immune to this matriarch's song for the next 24 hours."
+					]
+				},
+				{
+					"name": "Visage of Desire (1/Day)",
+					"entries": [
+						"The matriarch projects a vision into the minds of creatures within 30 feet of it that aren't constructs or undead, showing each creature achieving whatever it most desires. An affected creature must succeed on a {@dc 14} Wisdom saving throw or drop whatever it is holding and become {@condition paralyzed} until the end of its next turn."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"incapacitated"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Producer",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "aberration",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 50,
+				"climb": 50
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 16,
+			"int": 17,
+			"wis": 12,
+			"cha": 19,
+			"save": {
+				"con": "+7",
+				"wis": "+5",
+				"cha": "+8"
+			},
+			"skill": {
+				"deception": "+8",
+				"history": "+7",
+				"investigation": "+7",
+				"perception": "+9",
+				"stealth": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"Deep Speech",
+				"telepathy 120 ft."
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The producer can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Creature Sense",
+					"entries": [
+						"The producer is aware of the presence of creatures within 1,000 feet of it that have an Intelligence score of 4 or higher. It knows the distance and direction to each creature, as well as each creature's intelligence score, but can't sense anything else about it. A creature protected by a {@spell mind blank} spell, a {@spell nondetection} spell, or similar magic can't be perceived in this manner."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The producer is {@condition invisible}."
+					]
+				},
+				{
+					"name": "Surprise Attack",
+					"entries": [
+						"If the producer surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 ({@damage 3d6}) damage from the attack."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"The producer doesn't require sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The producer makes two Mind Drain attacks and uses Mental Pulse."
+					]
+				},
+				{
+					"name": "Mind Drain",
+					"entries": [
+						"{@atk ms} {@hit 8} to hit, reach 20 ft., one target. {@h}17 ({@damage 3d8 + 4}) psychic damage, and the target's Intelligence score is reduced by {@dice 1d4}. The target dies if this reduces its Intelligence to 0. Otherwise, the reduction lasts until the target finishes a short or long rest."
+					]
+				},
+				{
+					"name": "Mental Pulse",
+					"entries": [
+						"The producer creates a pulse of psychic energy in a 30-foot radius around it. Each creature caught in the area must make an Intelligence saving throw. On a failure, a creature takes 9 ({@damage 2d8}) psychic damage and falls {@condition prone}. On a success, a creature instead takes half damage and is not knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Silence (Recharges after a Short or Long rest)",
+					"entries": [
+						"The producer creates a 20-foot-radius sphere of silence centered around it, which lasts for 1 minute or until the producer loses {@status concentration} (as if {@status concentration||concentrating} on a spell). No sound can be created in the area or pass through it. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are {@condition deafened} while entirely inside it. Casting a spell that includes a verbal component is impossible there."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"DS",
+				"TP"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"RCH"
+			],
+			"conditionInflict": [
+				"invisible",
+				"prone"
+			]
+		},
+		{
+			"name": "Primaeval Blood",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"H"
+			],
+			"type": "ooze",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 187,
+				"formula": "15d12 + 90"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 22,
+			"int": 15,
+			"wis": 14,
+			"cha": 7,
+			"save": {
+				"str": "+9",
+				"int": "+6",
+				"wis": "+6"
+			},
+			"skill": {
+				"history": "+6",
+				"perception": "+6"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this distance)"
+			],
+			"passive": 16,
+			"resist": [
+				"necrotic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"prone"
+			],
+			"languages": [
+				"understands all languages",
+				"but can't speak"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Alien Mind",
+					"entries": [
+						"If a creature tries to read the blood's thoughts or deals psychic damage to it, that creature must succeed on a {@dc 18} Intelligence saving throw or be {@condition stunned} for 1 minute. The {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The blood can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the blood remains motionless, it is indistinguishable from a normal pool of congealed blood."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"The blood doesn't require sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The blood makes three Pseudopod attacks. If the blood hits a creature with two Pseudopod attacks, the blood can use its Weaken the Blood on that creature."
+					]
+				},
+				{
+					"name": "Pseudopod",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage plus 13 ({@damage 3d8}) necrotic damage, and the blood regains hit points equal to half the necrotic damage dealt."
+					]
+				},
+				{
+					"name": "Weaken the Blood",
+					"entries": [
+						"The blood weakens the blood of a creature that it can touch within 10 feet of it. The target must succeed on a {@dc 18} Constitution saving throw against poison or become weakened for 1 minute. A weakened creature in this way has disadvantage on attack rolls and ability checks, and has vulnerability to necrotic and poison damage. The creature can repeat its saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"False Appearance",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"XX"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"intelligence"
+			]
+		},
+		{
+			"name": "Putrid Ooze",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "ooze",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"average": 102,
+				"formula": "12d8 + 48"
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 20
+			},
+			"str": 17,
+			"dex": 6,
+			"con": 18,
+			"int": 2,
+			"wis": 6,
+			"cha": 1,
+			"skill": {
+				"stealth": "+1"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 8,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"prone"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The ooze can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the ooze remains motionless, it is indistinguishable from a pile of rotten detritus."
+					]
+				},
+				{
+					"name": "Poison Absorption",
+					"entries": [
+						"Whenever the ooze is subjected to poison damage, it takes no damage and instead regains a number of hit points equal to the poison damage dealt."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"The ooze doesn't require sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The ooze makes two Pseudopod attacks."
+					]
+				},
+				{
+					"name": "Pseudopod",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage plus 13 ({@damage 3d8}) poison damage, and the target must succeed on a {@dc 15} Constitution saving throw or become {@condition poisoned} for 1 minute. A creature {@condition poisoned} in this way can repeat its saving throw at the end of each of its turns, ending the effect on a success.",
+						"If a creature fails three saving throws against this feature within the space of 24 hours, that creature suffers the effects of a disease, randomly determined by the DM, which takes effect after they next complete a long rest."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Damage Absorption",
+				"False Appearance",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Sea Spawn Cephalid",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 102,
+				"formula": "12d10 + 36"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 19,
+			"dex": 14,
+			"con": 16,
+			"int": 6,
+			"wis": 10,
+			"cha": 8,
+			"save": {
+				"str": "+5",
+				"con": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"understands Aquan and Common but can't speak"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Limited Amphibiousness",
+					"entries": [
+						"The sea spawn can breathe air and water, but needs to be submerged in the sea at least once a day for 1 minute to avoid suffocating."
+					]
+				},
+				{
+					"name": "Unhindered Grapple",
+					"entries": [
+						"The sea spawn's speed is not halved while it is grappling a creature."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sea spawn makes three Tentacle attacks. It then uses Squeeze."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 15}). Until this grapple ends, the target is {@condition restrained}. The cephalid has eight tentacles, each of which can grapple one target."
+					]
+				},
+				{
+					"name": "Squeeze",
+					"entries": [
+						"The sea spawn tightens its grip on a single creature that it is grappling. That creature takes 11 ({@damage 2d6 + 4}) bludgeoning damage and it must succeed on a {@dc 11} Constitution saving throw or be {@condition stunned} until the start of the sea spawn's next turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Deadly Reach",
+					"entries": [
+						"In response to a visible enemy moving into its reach, the sea spawn makes one Tentacle attack against that enemy."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"languageTags": [
+				"AQ",
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained",
+				"stunned"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Sea Spawn Snapper",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 105,
+				"formula": "14d8 + 42"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 16,
+			"int": 6,
+			"wis": 10,
+			"cha": 8,
+			"save": {
+				"str": "+5",
+				"con": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"understands Aquan and Common but can't speak"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Limited Amphibiousness",
+					"entries": [
+						"The sea spawn can breathe air and water, but needs to be submerged in the sea at least once a day for 1 minute to avoid suffocating."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sea spawn makes two attacks: one with its Claws and one with its Bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 3}) piercing damage. If the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 13}). Until this grapple ends, the target is {@condition restrained}, and the sea spawn can't bite another target."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Swallow",
+					"entries": [
+						"The sea spawn makes one Bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the Bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the remorhaz, and it takes 7 ({@damage 2d6}) acid damage at the start of each of the sea spawn's turns. The sea spawn can only have one creature swallowed at a time.",
+						"If the sea spawn takes 10 damage or more on a single turn from a creature inside it, the sea spawn must succeed on a {@dc 15} Constitution saving throw at the end of that turn or regurgitate the swallowed creature, which falls {@condition prone} in a space within 5 feet of the sea spawn. If the sea spawn dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 5 feet of movement, exiting {@condition prone}."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"languageTags": [
+				"AQ",
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"A",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Sea Spawn Urchin",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 102,
+				"formula": "12d8 + 48"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 30
+			},
+			"str": 17,
+			"dex": 8,
+			"con": 18,
+			"int": 6,
+			"wis": 10,
+			"cha": 8,
+			"save": {
+				"str": "+6",
+				"con": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"understands Aquan and Common but can't speak"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Hazardous Body",
+					"entries": [
+						"A creature that touches the sea spawn or hits it with a melee attack while within 5 feet of it takes 2 ({@damage 1d4}) piercing damage plus 5 ({@damage 2d4}) poison damage."
+					]
+				},
+				{
+					"name": "Limited Amphibiousness",
+					"entries": [
+						"The sea spawn can breathe air and water, but needs to be submerged in the sea at least once a day for 1 minute to avoid suffocating."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sea spawn makes two Slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d4 + 3}) piercing damage plus 5 ({@damage 2d4}) poison damage, and the target must succeed on a {@dc 15} Constitution saving throw or be {@condition poisoned} for 1 minute. A creature {@condition poisoned} in this way takes 5 ({@damage 2d4}) poison damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AQ",
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Sea Spawn Wretch",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				9
+			],
+			"hp": {
+				"average": 13,
+				"formula": "2d8 + 4"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 30
+			},
+			"str": 13,
+			"dex": 8,
+			"con": 15,
+			"int": 5,
+			"wis": 10,
+			"cha": 6,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"understands Aquan and Common but can't speak"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Limited Amphibiousness",
+					"entries": [
+						"The sea spawn can breathe air and water, but needs to be submerged in the sea at least once a day for 1 minute to avoid suffocating."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sea spawn makes two attacks: one unarmed strike and one with its Piscine Anatomy."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Piscine Anatomy",
+					"entries": [
+						"The sea spawn uses one of the following options (choose one or roll a {@dice d6}):",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "1-2: Bite",
+									"entries": [
+										"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+									]
+								},
+								{
+									"type": "item",
+									"name": "3-4: Poison Quills",
+									"entries": [
+										"{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}2 ({@damage 1d4}) poison damage, and the target must succeed on a {@dc 11} Constitution saving throw or be {@condition poisoned} until the end of its next turn."
+									]
+								},
+								{
+									"type": "item",
+									"name": "5-6: Tentacle",
+									"entries": [
+										"{@atk mw} {@hit 3} to hit, reach 10 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 11}) if it is a Medium or smaller creature. Until this grapple ends, the sea spawn can't use this tentacle on another target."
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AQ",
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Hunter",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"str": "+5",
+				"dex": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"athletics": "+5",
+				"nature": "+4",
+				"perception": "+5",
+				"stealth": "+7",
+				"survival": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"any three languages"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"The hunter carries two quivers, each with twenty silvered arrows, as well as five silvered daggers."
+					]
+				},
+				{
+					"name": "Favored Enemy",
+					"entries": [
+						"The hunter has a favored enemy, which is a creature type from: Aberrations, Beasts, Celestials, Constructs, Dragons, Elementals, Fey, Fiends, Giants, Monstrosities, Oozes, Plants, or Undead; or two subtypes of Humanoid (such as Humans, Elves, or Goblinoids).",
+						"The hunter has advantage on Wisdom ({@skill Survival}) checks made to track their favored enemy, as well as on Intelligence checks to recall information about them."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hunter makes either two Silvered Shortsword and one Silvered Dagger attack or one Longbow attack."
+					]
+				},
+				{
+					"name": "Silvered Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Silvered Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Mark Quarry (3/Day)",
+					"entries": [
+						"The hunter marks a creature that it can see within 60 feet of it as its quarry. Whenever the hunter hits its quarry with a weapon attack, the target takes an extra 3 ({@damage 1d6}) damage from the attack. This damage is the same type as the weapon. Additionally, the hunter has advantage on Wisdom ({@skill Perception}) checks to perceive the creature and Wisdom ({@skill Survival}) checks to track it.",
+						"The target remains the hunter's quarry until it's reduced to 0 hit points, dies, or the hunter marks another creature as its quarry."
+					]
+				}
+			],
+			"attachedItems": [
+				"longbow|phb",
+				"silvered dagger|phb",
+				"silvered shortsword|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Unspoken",
+			"source": "EzmereldasGuidetoRavenloft",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 15,
+			"int": 18,
+			"wis": 8,
+			"cha": 6,
+			"passive": 9,
+			"resist": [
+				"psychic"
+			],
+			"languages": [
+				"any two languages",
+				"telepathy 30 ft."
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Insane Jabbering",
+					"entries": [
+						"The unspoken constantly mutters in maddening tongues. Whenever another creature starts its turn within 10 feet of the unspoken, if it's able to hear the unspoken, the unspoken can magically force it to make a {@dc 14} Wisdom saving throw, unless the unspoken is {@condition incapacitated} or can't speak. On a failure, a creature takes 7 ({@damage 2d6}) psychic damage and it has disadvantage on attack rolls and ability checks it makes before the start of its next turn."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"The unspoken doesn't require sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The unspoken uses Doomsay twice."
+					]
+				},
+				{
+					"name": "Doomsay",
+					"entries": [
+						"The unspoken speaks inscrutable prophecies into the mind of a creature it can communicate with telepathically. The target must make a {@dc 14} Wisdom saving throw, taking 7 ({@damage 2d6}) psychic damage on a failed save, or half as much damage on a successful one. If the saving throw fails by 5 or more, the creature is {@condition frightened} of the unspoken until the start of the unspoken's next turn. A creature {@condition frightened} in this way is {@condition paralyzed}."
+					]
+				},
+				{
+					"name": "Curse of Terrible Truths (1/Day)",
+					"entries": [
+						"The unspoken speaks a curse in the mind of a creature that it can see within 30 feet of it. If the target can hear the unspoken, it becomes cursed for 24 hours. While cursed in this way, a creature has disadvantage on Intelligence, Wisdom, and Charisma saving throws (except for saving throws made against this curse) and it gains no benefits from a long rest.",
+						"At the end of each of the cursed creature's turns, it can make a {@dc 14} Wisdom saving throw. After failing three of these saving throws, the creature stops making these saving throws. After succeeding on three of these saving throws, the curse ends early.",
+						"A {@spell remove curse} spell or similar magic ends the curse."
+					]
+				}
+			],
+			"traitTags": [
+				"Unusual Nature"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP",
+				"X"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			]
 		},
 		{
